@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css?family=Karla");
+body {
+  overflow-x: hidden;
+  font-family: "Karla", sans-serif;
+  background-color: #E9E7E7;
+}
+
+.merasteem_user_image {
+  max-width: 60px;
+  width: 60px;
+  height: 60px;
+}
+
+.merasteem_profile_image {
+  max-width: 90px;
+  width: 90px;
+  height: 90px;
+}
+
+.merasteem_post_image {
+  width: 100%;
+  height: 18vw;
+  object-fit: cover;
+}
+
+.sticky-top {
+  top: 10%;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 70vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden; }
+
+header video {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+
+header .container {
+  position: relative;
+  z-index: 1;
+  top: 8%; }
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1; }
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll; }
+  header video {
+    display: none; } }
+
+.dark-overlay {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.bg-main {
+  background-color: #4682B4; }
+
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1em !important;
+  padding-right: 1em !important; }
+
+.navbar.nav-item.active {
+  border-left: #444 3px solid; }
+
+.navbar.navbar-inner {
+  background-color: #4682B4; }
+
+.nav li.nav-item.active {
+  border-right: #000 3px solid; }
+
+.nav-tabs {
+  border-radius: 6px; }
+
+.font-icons .home-icons {
+  color: #4682B4;
+  background-color: #FFFFFF;
+  font-size: 32px;
+  border-radius: 100%; }
+
+.font-icons p.header {
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: relative; }
+  .font-icons p.header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -8px;
+    left: 0;
+    background-color: #4682B4;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.25s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+    transition: all 0.25s cubic-bezier(1, 0.25, 0, 0.75) 0s; }
+
+.font-icons p.footer {
+  font-size: 0.9rem;
+  visibility: hidden; }
+
+.font-icons:hover .home-icons {
+  color: #FFFFFF;
+  background-color: #008080; }
+
+.font-icons:hover p.header::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+
+.font-icons:hover p.footer {
+  visibility: visible;
+  font-size: 0.9rem; }
+
+.how-icons .home-icons {
+  color: #4682B4;
+  background-color: #FFFFFF;
+  font-size: 32px;
+  border-radius: 100%; }
+
+.how-icons p.header {
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: relative; }
+  .how-icons p.header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -8px;
+    left: 0;
+    background-color: #4682B4;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.25s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+    transition: all 0.25s cubic-bezier(1, 0.25, 0, 0.75) 0s; }
+
+.how-icons:hover .home-icons {
+  color: #FFFFFF;
+  background-color: #008080; }
+
+.how-icons:hover p.header::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+
+.project-icons {
+  position: relative;
+  height: 40px; }
+  .project-icons .home-icons {
+    z-index: 1;
+    color: #4682B4;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    border-radius: 100%; }
+  .project-icons i.fa {
+    visibility: visible; }
+  .project-icons .badge {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    visibility: hidden;
+    z-index: 2; }
+  .project-icons:hover .home-icons {
+    color: #FFFFFF;
+    background-color: #008080; }
+  .project-icons:hover i.fa {
+    visibility: hidden; }
+  .project-icons:hover .badge {
+    visibility: visible; }
+
+#about-things {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/lights.jpg");
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  padding-top: 100px; }
+
+#contact-form {
+  position: relative;
+  min-height: 350px;
+  background: url("../img/lights.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+
+#how-it-works {
+  position: relative;
+  min-height: 250px;
+  background: url("../img/lights.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 100px; }
+
+#page-header {
+  position: relative;
+  height: 300px;
+  background: url("../img/lights.jpg");
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 75px; }
+
+#profile-header {
+  position: relative;
+  height: 200px;
+  background: url("../img/lights.jpg");
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 90px; }
+
+#about-header {
+  position: relative;
+  background: url("../img/lights.jpg");
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 90px; }
+
+#about img {
+  margin-top: -35px; }
+
+.xSteem .around{
+    border:2px solid #fff;
+}
+
+.xSteem h5{
+    margin-top:-30px;
+    width: 230px;
+}
+
+#faq .card {
+  border: #444; }
+  #faq .card a {
+    color: #fff;
+    text-decoration: none; }
+
+#faq .card-body, #faq .card-header {
+  background: #333; }
+
+.toggle-light {
+  color: #fff;
+  border-color: #fdfdfe; }

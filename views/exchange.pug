@@ -1,0 +1,111 @@
+doctype html
+head
+  include head.pug
+include userMenu.pug
+#about-things.align-items-center
+  .container.text-center
+    h1 Merasteem Exchange
+section.container.py-3.mt-5
+  .row
+    .sticky-top.col-lg-2.d-none.d-lg-block
+      include sidemenu.pug
+      include topics.pug
+    .main-content.col-md-12.col-lg-10
+      nav
+        #nav-tab.nav.nav-tabs(role='tablist')
+          a#nav-buy-tab.nav-item.nav-link.active(data-toggle='tab' href='#nav-buy' role='tab' aria-controls='nav-buy' aria-selected='true') Buy Steem/SBD
+          a#nav-sell-tab.nav-item.nav-link(data-toggle='tab' href='#nav-sell' role='tab' aria-controls='nav-sell' aria-selected='false') Sell Steem/SBD
+      #nav-tabContent.tab-content.bg-main.text-light
+        #nav-buy.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='nav-buy-tab')
+          div.p-4
+            .xSteem
+              .around.p-3.mb-3
+                h5.ml-2.bg-main.text-center Buy Steem/SBD
+                div.input-group.mb-3.w-50
+                  .input-group-prepend
+                    span#steemUser.input-group-text Filter By Currency
+                  select.custom-select
+                    option(value='1') Show All
+                    option(value='2') INR
+                    option(value='3') USD
+                div.input-group.mb-3.w-50
+                  .input-group-prepend
+                    span#steemUser.input-group-text Filter By Method
+                  select.custom-select
+                    option(value='1') Google Pay
+                    option(value='2') Paytm Wallet
+                    option(value='3') Mobikwik Wallet
+              table.table.table-hover.table-bordered.table-responsive-sm
+                thead
+                  tr
+                    th(scope='col') Currency
+                    th(scope='col') Price
+                    th(scope='col') Amount
+                    th(scope='col') Method
+                    th(scope='col') Action
+                tbody
+                  tr
+                    td 25 SBD
+                    td 65 INR/SBD
+                    td 1625 INR
+                    td Google Pay
+                    td
+                      .btn.btn-sm.btn-info Buy Now
+                  tr
+                    td 28 SBD
+                    td 1 USD/SBD
+                    td 28 USD
+                    td Paypal
+                    td
+                      .btn.btn-sm.btn-info Buy Now
+                  tr
+                    td 75 Steem
+                    td 60 INR/Steem
+                    td 4500 INR
+                    td Paytm
+                    td
+                      .btn.btn-sm.btn-info Buy Now
+        #nav-sell.tab-pane.fade(role='tabpanel' aria-labelledby='nav-sell-tab')
+          div.p-4
+            .xSteem
+              .around.p-3.mb-3
+                h5.ml-2.bg-main.text-center Create Offer
+                div.input-group.mb-3.w-50
+                  .input-group-prepend
+                    span#steemUser.input-group-text Payment Account
+                  select.custom-select
+                    option(value='1') Google Pay
+                    option(value='2') Mobikwik
+                    option(value='3') Paypal
+                    option(value='4') Paytm
+                div.input-group.mb-3.w-50
+                  .input-group-prepend
+                    span#currency.input-group-text Currency
+                  select.custom-select
+                    option(value='1') INR
+                    option(value='2') USD
+              .around.p-3.mb-3
+                h5.ml-2.bg-main.text-center Amount &amp; Price
+                div.input-group.mb-3.w-50
+                  .input-group-prepend
+                    span#sbdAmount.input-group-text Amount of SBD
+                  input#sbdAmount.form-control(type='number' placeholder='10')
+                div.input-group.mb-3.w-50
+                  .input-group-prepend
+                    span#sbdPrice.input-group-text Price Per SBD
+                  input#sbdPrice.form-control(type='number' placeholder='65')
+                  .input-group-append
+                    span.input-group-text Per SBD
+              .around.p-3.mb-3
+                h5.ml-2.bg-main.text-center Fund Your Offer
+                div.input-group.mb-3.w-50
+                  .input-group-prepend
+                    span#funds.input-group-text Funds Needed
+                  input#funds.form-control.disabled(type='number' placeholder='65')
+                div.input-group.mb-3.w-50
+                  .input-group-prepend
+                    span#username.input-group-text @
+                  input#username.form-control(type='text' placeholder='username')
+              .btn.btn-lg.btn-info Create Offer
+include footer.pug
+include scripts.pug

@@ -1,0 +1,37 @@
+doctype html
+head
+  include head.pug
+include userMenu.pug
+include profileHeader.pug
+section.container.py-3.mt-5
+  .row
+    .sticky-top.col-lg-2.d-none.d-lg-block
+      include sidemenu.pug
+      include topics.pug
+    .main-content.col-md-12.col-lg-6
+      .text-light
+        .bg-main.d-flex.justify-content-between.p-3
+          .justify-content-left Steem
+          .justify-content-right 0.00 Steem
+        .bg-main.d-flex.justify-content-between.p-3  
+          .justify-content-left Steem Power
+          .justify-content-right 0.00 Steem
+        .bg-main.d-flex.justify-content-between.p-3 
+          .justify-content-left Steem Dollar
+          .justify-content-right 0.00 SBD
+        .bg-main.d-flex.justify-content-between.p-3 
+          .justify-content-left Savings
+          .justify-content-right 0.00 Steem, 0.00 SBD
+        .bg-main.d-flex.justify-content-between.p-3 
+          .justify-content-left Estimated Account Value
+          .justify-content-right $0.00
+      br
+    .col-lg-4.d-none.d-lg-block.sticky-top.border
+      .text-center.text-light
+        .btn.btn-info.mb-2.col-12 Transfer
+        .btn.btn-info.mb-2.col-12 Delegate
+        .btn.btn-secondary.mb-2.col-6 Power up
+        .btn.btn-secondary.mb-2.col-6 Power down
+        .btn.btn-primary.mb-2.col-12 Buy Steem or Steem Power
+include footer.pug
+include scripts.pug

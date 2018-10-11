@@ -1,0 +1,137 @@
+// Modal
+#becomePartner.modal.fade(tabindex='-1' role='dialog' aria-labelledby='becomePartnerLabel' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+        .modal-content
+            .modal-header
+                h4#becomePartnerLabel.modal-title.text-uppercase Want to get more clients and grow your service business?
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                span(aria-hidden='true') &times;
+            .modal-body
+                p.h4.text-center Expand your service business with MeraSteem
+                br
+                ul
+                    li.h5 Get verified customer requests
+                    p Get connected with customers looking for your service.
+                    li.h5 Pay to send quotes
+                    p Pay only to reply to customer leads that match your interests and qualifications.
+                    li.h5 Chat and get hired
+                    p Chat with the customers, finalise the quotes and get hired. Know More.
+            .modal-footer
+                a.btn.btn-info(href="#") Become A Professional
+                a.btn.btn-primary(href="#") Become A Moderator
+
+#mainCategoryModal.modal.fade.mh-50(tabindex='-1' role='dialog' aria-labelledby='mainCategoryModalLabel' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+        .modal-content
+            .modal-header
+                h4#mainCategoryModalLabel.modal-title Choose Your Location, Category &amp; Sub-Category
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    span(aria-hidden='true') &times;
+            .modal-body
+                form
+                    .input-group.mb-3
+                        .input-group-prepend
+                            span.input-group-text#inputGroup-sizing-default Location:
+                        input.form-control(type='text' aria-label='Location input' aria-describedby='inputGroup-sizing-default')
+                    hr
+                    .row
+                        .col-4
+                            #list-tab.list-group(role='tablist')
+                            a#list-appliance-list.list-group-item.list-group-item-action.active(data-toggle='list' href='#list-appliance' role='tab' aria-controls='appliance') Appliance Repair
+                            a#list-beauty-list.list-group-item.list-group-item-action(data-toggle='list' href='#list-beauty' role='tab' aria-controls='beauty') Beauty &amp; Spa
+                            a#list-business-list.list-group-item.list-group-item-action(data-toggle='list' href='#list-business' role='tab' aria-controls='business') Business &amp; Taxes
+                            a#list-home-list.list-group-item.list-group-item-action(data-toggle='list' href='#list-home' role='tab' aria-controls='home') Home Cleaning &amp; Repair
+                            a#list-personal-list.list-group-item.list-group-item-action(data-toggle='list' href='#list-personal' role='tab' aria-controls='personal') Personal &amp; More
+                            a#list-events-list.list-group-item.list-group-item-action(data-toggle='list' href='#list-events' role='tab' aria-controls='events') Wedding &amp; Events
+                        .col-8
+                            #nav-tabContent.tab-content
+                            #list-appliance.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='list-appliance-list')
+                                ul.pt-2
+                                li AC Service &amp; Repair
+                                li Air Cooler Repair
+                                li Chimney Cleaning &amp; Repair
+                                li Computer Repair
+                                li Geyser / Water Heater Repair
+                                li iPhone, iPad, Mac Repair
+                                li Laptop Repair
+                                li Microwave Repair
+                                li Mobile Repair
+                                li Refrigerator Repair
+                                li Television Repair &amp; Installation
+                                li Washing Machine Repair
+                                li Water Purifier Repair
+                            #list-beauty.tab-pane.fade(role='tabpanel' aria-labelledby='list-beauty-list')
+                                ul.p-3
+                                li Makeup &amp; Hair Styling
+                                li Massage for Men
+                                li Massage for Women
+                                li Salon at Home for Women
+                                li Tattoo Artist
+                            #list-business.tab-pane.fade(role='tabpanel' aria-labelledby='list-business-list')
+                                ul.p-3
+                                li CA for Income Tax Filing
+                                li CA for Small Business
+                                li CA/CS for Company Registration
+                                li CCTV Cameras &amp; Installation
+                                li Chartered Accountant
+                                li Fashion Photographer
+                                li Graphics Designer
+                                li Lawyer
+                                li Visa Agency
+                            #list-home.tab-pane.fade(role='tabpanel' aria-labelledby='list-home-list')
+                                ul.p-3
+                                li Architect
+                                li Bathroom Deep Cleaning
+                                li Bathroom Renovation
+                                li Car Cleaning
+                                li Carpenter
+                                li Carpet Cleaning
+                                li Doorstep laundry
+                                li Dry Cleaning
+                                li Electrician
+                                li Furniture &amp; Woodwork
+                                li Home Deep Cleaning
+                                li House Painters
+                                li IKEA Furniture Assembly
+                                li Interiors
+                                li Kitchen Deep Cleaning
+                                li Modular Kitchens
+                                li Pest Control
+                                li Plans &amp; Design
+                                li Plumbers
+                                li Renovation
+                                li Sofa Cleaning
+                            #list-personal.tab-pane.fade(role='tabpanel' aria-labelledby='list-personal-list')
+                                ul.p-3
+                                li Astrologer
+                                li Baby Portfolio Photographer
+                                li Dietitian
+                                li Divorce Lawyer
+                                li Elder Care at Home
+                                li Fitness Trainer at Home
+                                li Guitar lessons at Home
+                                li Home Tutor
+                                li Keyboard Lessons at Home
+                                li Maternity Photographer
+                                li Physiotherapy at Home
+                                li Packers &amp; Movers
+                                li Real Estate Lawyer
+                                li Yoga Trainer at Home
+                            #list-events.tab-pane.fade(role='tabpanel' aria-labelledby='list-events-list')
+                                ul.p-3
+                                li Bartender
+                                li Bridal Makeup Artist
+                                li Corporate Event Planner
+                                li Disk Jockey
+                                li Event Photographer
+                                li Party Caterer
+                                li Party Planners
+                                li Pre-Wedding Shoot
+                                li Wedding Caterers
+                                li Wedding Choreographer
+                                li Wedding Florists &amp; Decorators
+                                li Wedding Photographer
+                                li Wedding Planner
+                                li Wedding Venues
+            .modal-footer
+                button.btn.btn-primary(type='button') Get Details

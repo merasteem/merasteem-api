@@ -1,0 +1,223 @@
+doctype html
+head
+  include head.pug
+include userMenu.pug
+#profile-header
+  .container
+    .row.align-items-center.mx-5
+      img.merasteem_profile_image.rounded-circle.img-responsive(src='./img/dummy.jpg' alt='User Image')
+      .col  
+        .row.mx-5
+          p.h4
+            | USERNAME
+          span.badge.badge-pill.badge-secondary.h-25.ml-2.mt-1
+            | 25
+          .btn.btn-outline-light.ml-3 Edit Profile
+        p.small.mx-5
+          | @username
+          span.px-2
+            i.fa.fa-shield-alt.mx-1
+              | Plankton
+section.container.py-3.mt-5
+  .row
+    .sticky-top.col-lg-2.d-none.d-lg-block
+      include sidemenu.pug
+      include topics.pug
+    .main-content.col-md-12.col-lg-6
+      .text-right
+        p Sort by: Trending
+      .card.border.bg-light
+        .card-header.d-flex.justify-content-between.align-items-center.px-3.py-2
+          a(href='/@username')
+            img.merasteem_user_image.rounded-circle(src='./img/dummy.jpg' alt='User Image')
+          .col
+            a(href='/@username')
+              p.h4
+              | username
+              span.badge.badge-pill.badge-secondary.ml-2 25
+            p.small Some Time Ago . 
+              span.badge.badge-pill.badge-info Steemit
+          a.btn.btn-secondary(href='/trending/project') ms-makeup
+        h4.card-text.p-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, maxime.
+        img.merasteem_post_image.card-image.img-fluid(src='./img/dummy.jpg' alt='Post Image')
+        h6.p-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quasi cumque molestiae, cum fuga ut quia culpa consequatur hic consequuntur nobis fugiat voluptatum quidem delectus!
+        .card-footer.d-flex.justify-content-between
+          .p-1
+            span.p-2
+              i.fa.fa-heart.px-1
+              | 320
+            span.p-2
+              i.fa.fa-comment.px-1
+              | 12
+            span.p-2
+              i.fa.fa-random.px-1
+              | 2
+            i.fa.fa-ellipsis-h.px-1
+          .p-1
+            span.p-2
+              i.fa.fa-dollar-sign.px-1
+              | 120
+      br
+      .card.border.bg-light
+          .card-header.d-flex.justify-content-between.align-items-center.px-3.py-2
+            a(href='/@username')
+              img.merasteem_user_image.rounded-circle(src='./img/dummy.jpg' alt='User Image')
+            .col
+              a(href='/@username')
+                p.h4
+                | username
+                span.badge.badge-pill.badge-secondary.ml-2 25
+              p.small Some Time Ago . 
+                span.badge.badge-pill.badge-info Steemit
+            a.btn.btn-secondary(href='/trending/project') ms-electrician
+          h4.card-text.p-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, maxime.
+          img.merasteem_post_image.card-image.img-fluid(src='./img/dummy.jpg' alt='Post Image')
+          h6.p-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quasi cumque molestiae, cum fuga ut quia culpa consequatur hic consequuntur nobis fugiat voluptatum quidem delectus!
+          .card-footer.d-flex.justify-content-between
+            .p-1
+              span.p-2
+                i.fa.fa-heart.px-1
+                | 320
+              span.p-2
+                i.fa.fa-comment.px-1
+                | 12
+              span.p-2
+                i.fa.fa-random.px-1
+                | 2
+              i.fa.fa-ellipsis-h.px-1
+            .p-1
+              span.p-2
+                i.fa.fa-dollar-sign.px-1
+                | 120
+      br
+      .card.border.bg-light
+          .card-header.d-flex.justify-content-between.align-items-center.px-3.py-2
+            a(href='/@username')
+              img.merasteem_user_image.rounded-circle(src='./img/dummy.jpg' alt='User Image')
+            .col
+              a(href='/@username')
+                p.h4
+                | username
+                span.badge.badge-pill.badge-secondary.ml-2 25
+              p.small Some Time Ago . 
+                span.badge.badge-pill.badge-info Steemit
+            a.btn.btn-secondary(href='/trending/project') ms-plumber
+          h4.card-text.p-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, maxime.
+          img.merasteem_post_image.card-image.img-fluid(src='./img/dummy.jpg' alt='Post Image')
+          h6.p-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quasi cumque molestiae, cum fuga ut quia culpa consequatur hic consequuntur nobis fugiat voluptatum quidem delectus!
+          .card-footer.d-flex.justify-content-between
+            .p-1
+              span.p-2
+                i.fa.fa-heart.px-1
+                | 320
+              span.p-2
+                i.fa.fa-comment.px-1
+                | 12
+              span.p-2
+                i.fa.fa-random.px-1
+                | 2
+              i.fa.fa-ellipsis-h.px-1
+            .p-1
+              span.p-2
+                i.fa.fa-dollar-sign.px-1
+                | 120
+      br
+      .card.border.bg-light
+          .card-header.d-flex.justify-content-between.align-items-center.px-3.py-2
+            a(href='/@username')
+              img.merasteem_user_image.rounded-circle(src='./img/dummy.jpg' alt='User Image')
+            .col
+              a(href='/@username')
+                p.h4
+                | username
+                span.badge.badge-pill.badge-secondary.ml-2 25
+              p.small Some Time Ago . 
+                span.badge.badge-pill.badge-info Steemit
+            a.btn.btn-secondary(href='/trending/project') ms-painter
+          h4.card-text.p-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, maxime.
+          img.merasteem_post_image.card-image.img-fluid(src='./img/dummy.jpg' alt='Post Image')
+          h6.p-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quasi cumque molestiae, cum fuga ut quia culpa consequatur hic consequuntur nobis fugiat voluptatum quidem delectus!
+          .card-footer.d-flex.justify-content-between
+            .p-1
+              span.p-2
+                i.fa.fa-heart.px-1
+                | 320
+              span.p-2
+                i.fa.fa-comment.px-1
+                | 12
+              span.p-2
+                i.fa.fa-random.px-1
+                | 2
+              i.fa.fa-ellipsis-h.px-1
+            .p-1
+              span.p-2
+                i.fa.fa-dollar-sign.px-1
+                | 120
+      br
+    .col-lg-4.d-none.d-lg-block.sticky-top
+      .card.text-center.bg-main.text-light.px-2.pt-4.mb-3
+        .card-title.mb-0
+          h2 Interesting Projects
+        .card-body.col
+          .row.mb-2
+            .col-6.d-flex
+              span.p-2
+                i.fa.fa-user.p-1
+              .project-name Project 1
+            .col-6
+              a.btn.btn-outline-light.justify-content-right(href='#') Follow
+          .row.mb-2
+            .col-6.d-flex
+              span.p-2
+                i.fa.fa-user.p-1
+              .project-name Project 2
+            .col-6
+              a.btn.btn-outline-light.justify-content-right(href='#') Follow
+          .row.mb-2
+            .col-6.d-flex
+              span.p-2
+                i.fa.fa-user.p-1
+              .project-name Project 3
+            .col-6
+              a.btn.btn-outline-light.justify-content-right(href='#') Follow
+          .row.mb-2
+            .col-6.d-flex
+              span.p-2
+                i.fa.fa-user.p-1
+              .project-name Project 4
+            .col-6
+              a.btn.btn-outline-light.justify-content-right(href='#') Follow
+      .card.text-center.bg-main.text-light.px-2.pt-4
+        .card-title.mb-0
+          h2 Jobs For Your Profile
+        .card-body.col
+          .row.mb-2
+            .col-6.d-flex
+              span.p-2
+                i.fa.fa-user.p-1
+              .project-name Job 1
+            .col-6
+              a.btn.btn-outline-light.justify-content-right(href='#') Apply
+          .row.mb-2
+            .col-6.d-flex
+              span.p-2
+                i.fa.fa-user.p-1
+              .project-name Job 2
+            .col-6
+              a.btn.btn-outline-light.justify-content-right(href='#') Apply
+          .row.mb-2
+            .col-6.d-flex
+              span.p-2
+                i.fa.fa-user.p-1
+              .project-name Job 3
+            .col-6
+              a.btn.btn-outline-light.justify-content-right(href='#') Apply
+          .row.mb-2
+            .col-6.d-flex
+              span.p-2
+                i.fa.fa-user.p-1
+              .project-name Job 4
+            .col-6
+              a.btn.btn-outline-light.justify-content-right(href='#') Apply
+include footer.pug
+include scripts.pug

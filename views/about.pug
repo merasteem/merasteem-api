@@ -1,0 +1,376 @@
+doctype html
+head
+  include head.pug
+include menu.pug
+header#about-header
+  .container
+    .row
+      .col-md-6.m-auto.text-center
+        h1 About Us
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, saepe.
+// ABOUT SECTION
+section#about.py-3
+  .container
+    .row
+      .col-xl-6.col-sm-8
+        h1 WHAT IS @MERASTEEM
+        p
+          | We 
+          a(href='https://www,steemit.com/@merasteem' target='_blank') @merasteem
+          |  believe in the future of work. Future of work? Yes, let us understand what is this future we are talking about.
+        blockquote.blockquote
+          p.mb-0
+            | The future of work is 
+            b Transparent
+            | .
+          footer.blockquote-footer.text-dark
+            | No one is going to take your word for it. The more productively you work, the more money you&apos;ll make.
+        blockquote.blockquote
+          p.mb-0
+            | The future of work is 
+            b Flat
+            | .
+          footer.blockquote-footer.text-dark
+            | No one is going to complain about their commute. Project teams can work together from anywhere in the world.
+        blockquote.blockquote
+          p.mb-0
+            | The future of work is 
+            b Competitive
+            | .
+          footer.blockquote-footer.text-dark
+            | No one is going to pay you just for having a degree. Competition for jobs is no longer limited to where you live.
+        blockquote.blockquote.mb-3
+          p.mb-0
+            | The future of work is 
+            b On-Demand
+            | .
+          footer.blockquote-footer.text-dark
+            | No one is going to guarantee you a lifetime career. Many businesses choose contract relationships over hiring new employees.
+      .col-xl-6.col-sm-4.d-none.d-lg-block
+        img.about-img.img-fluid.rounded-circle.ml-auto(src='./img/600.jpeg' alt='')
+section#about-things.py-5.dark-overlay.text-light
+  .container
+    h1.text-center.mb-5 HOW IT WORKS?
+    ul.nav.nav-tabs.flex-column.flex-sm-row.nav-justified.mb-5
+      li.nav-item
+        a.flex-sm-fill.text-sm-center.nav-link.active(data-toggle='tab' href='#jobs') Job Seekers
+      li.nav-item
+        a.flex-sm-fill.text-sm-center.nav-link(data-toggle='tab' href='#project') Project Owners
+      li.nav-item
+        a.flex-sm-fill.text-sm-center.nav-link(data-toggle='tab' href='#invest') Investment Opportutnities
+    .tab-content
+      #jobs.tab-pane.fade.show.active.container
+        .row
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-search-dollar.fa-stack-4x.mb-2
+            p.header Search For Jobs
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-user-tie.fa-stack-4x.mb-2
+            p.header Apply For Jobs
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-money-check-alt.fa-stack-4x.mb-2
+            p.header Get Paid For The Work
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+      #project.tab-pane.fade.container
+        .row
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-bullhorn.fa-stack-4x.mb-2
+            p.header Introduce Your Business
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-user-plus.fa-stack-4x.mb-2
+            p.header People Apply For Jobs
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-chart-line.fa-stack-4x.mb-2
+            p.header Attract Investors With Returns
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+      #invest.tab-pane.fade.container
+        .row
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-tasks.fa-stack-4x.mb-2
+            p.header Mark Projects You Like
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-envelope.fa-stack-4x.mb-2
+            p.header Get Notifications
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-file-invoice-dollar.fa-stack-4x.mb-2
+            p.header Invest &amp; Earn More
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+// HOME ICON SECTION
+section.py-2.bg-light
+  .container
+    h1.text-center.mt-5.mb-2 Explore Project Categories
+    h5.text-center.mb-5 Get inspired to build your business
+    ul.nav.nav-tabs.flex-column.flex-sm-row.nav-justified.mb-5
+      li.nav-item
+        a.flex-sm-fill.text-sm-center.nav-link.active(data-toggle='tab' href='#online') ONLINE
+      li.nav-item
+        a.flex-sm-fill.text-sm-center.nav-link(data-toggle='tab' href='#offline') OFFLINE
+    // Tab panes
+    .tab-content
+      #online.tab-pane.fade.show.active.container
+        .row
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-tty.fa-stack-4x.mb-2
+            p.header Administrative
+            p.footer Provide supportive role, manage communications, handle personal matters, and oversee busy teams.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fab.fa-studiovinari.fa-stack-4x.mb-2
+            p.header Animation
+            p.footer Many people have a story to tell, if you have the skills to give their story characters a life, you will make good money.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-edit.fa-stack-4x.mb-2
+            p.header Blog
+            p.footer Love to share things happening in your life? Earn money while doing so.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-pen-fancy.fa-stack-4x.mb-2
+            p.header Copywriting
+            p.footer Write engaging and informative copy for projects, and improve the strength of their brand.
+        .row
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-paint-brush.fa-stack-4x.mb-2
+            p.header Design
+            p.footer Are you an illustrator? Now earn money for doing simple jobs.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-code-branch.fa-stack-4x.mb-2
+            p.header Developer
+            p.footer If you have proper skills to develop websites and mobile applications, then this is the right place to get good projects.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-balance-scale.fa-stack-4x.mb-2
+            p.header Legal
+            p.footer Supervise agreeements, dealing with disputes, giving general advise and explaining the law to project managers.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-chart-area.fa-stack-4x.mb-2
+            p.header Research
+            p.footer Gather data and perform basic research, which is then applied to help advance the project.
+        .row
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-users-cog.fa-stack-4x.mb-2
+            p.header SMA Experts
+            p.footer Have experience in handling social media accounts? Now help others and earn.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-language.fa-stack-4x.mb-2
+            p.header Translation
+            p.footer Know a specific language? Help websites and other content owners with the translation.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-graduation-cap.fa-stack-4x.mb-2
+            p.header Tutorials
+            p.footer Create how-to video or text tutorials for a product and help people learn how to use it.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-globe-americas.fa-stack-4x.mb-2
+            p.header Visibility
+            p.footer Tell the community what you&apos;ve done to promote a project.
+      #offline.tab-pane.fade.container
+        .row
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fab.fa-medapps.fa-stack-4x.mb-2
+            p.header Appliance Repair
+            p.footer Repair services for electrical appliances like refrigerator, washing machine, water purifier, air condition and microwave. 
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-mortar-pestle.fa-stack-4x.mb-2
+            p.header Beauty &#38; Spa
+            p.footer Provide services like makeup &#38; hairstyling, massage for men &#38; women, and salon at home.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-vihara.fa-stack-4x.mb-2
+            p.header Carpenter
+            p.footer Measure, cut, or shape wood, plastic, and other materials, and construct building equipments.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-bolt.fa-stack-4x.mb-2
+            p.header Electrician
+            p.footer Identify electrical problems, install wiring, contron and lighting systems.
+        .row
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-calendar-alt.fa-stack-4x.mb-2
+            p.header Event Management
+            p.footer Share what you did to manage events held for projects, meetings, seminar or even a cultural event.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-calculator.fa-stack-4x.mb-2
+            p.header Finance
+            p.footer Share what you did to help an organization with their financial activities.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-gopuram.fa-stack-4x.mb-2
+            p.header Home-Decor
+            p.footer Beautiful environment inspires everybody and ideas come naturally when the mind is happy.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-chalkboard-teacher.fa-stack-4x.mb-2
+            p.header Home Tutor
+            p.footer Provide educational assistance to elementary, primary or secondary school students or to adults.
+        .row
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-wrench.fa-stack-4x.mb-2
+            p.header Plumber
+            p.footer Install pipes and fixtures, for water, gas, steam, air, or other liquids.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-dumbbell.fa-stack-4x.mb-2
+            p.header Trainer
+            p.footer Yoga and exercise makes people more productive, share what you did to help them achieve that.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-camera-retro.fa-stack-4x.mb-2
+            p.header Videography
+            p.footer Share with the community what you have captured with your third eye.
+          .font-icons.col-md-3.text-center
+            span.home-icons.fa-stack
+              i.fas.fa-shoe-prints.fa-stack-4x.mb-2
+            p.header Volunteer
+            p.footer Recently helped someone with a task? Share the details with the community.
+// CONTACT SECTION
+section#contact-form
+  .container.py-5
+    h1.text-center.text-uppercase.text-light.mb-3 Contact Us
+    .row
+      .col-md-4
+        .card.p-2
+          .card-body
+            h4 Get In Touch
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            h4 Address
+            p Ahmedabad, Gujarat
+            h4 Email
+            p merasteem@gmail.com
+            h4 Phone
+            p (+91) 70160 21257
+      .col-md-8
+        .card.p-4
+          .card-body
+            h3.text-center Please fill out this form to contact us
+            hr
+            .row
+              .col-md-6
+                .form-group
+                  input.form-control(type='text' placeholder='First Name')
+              .col-md-6
+                .form-group
+                  input.form-control(type='text' placeholder='Last Name')
+              .col-md-6
+                .form-group
+                  input.form-control(type='text' placeholder='Email')
+              .col-md-6
+                .form-group
+                  input.form-control(type='text' placeholder='Phone Number')
+            .row
+              .col-md-12
+                .form-group
+                  textarea.form-control(placeholder='Message')
+              .col-md-12
+                input.btn.btn-outline-success.btn-block(type='submit')
+// STAFF SECTION
+section#staff.py-5.text-center.bg-light.text-white
+  .container.text-dark
+    h1 The Legendary Team
+    hr.bg-info
+    .row
+      .col-lg-4.col-md-12.mb-5
+        img.img-fluid.rounded-circle.mb-2(src='img/dummy.jpg' alt='')
+        h4 John Doe
+        p Board Member, Backend Developer
+        .container.bg-info.p-3.mt-3.d-flex.justify-content-center.rounded
+          .col-lg-3.col-md-4.font-icons
+            a(href='#')
+              span.home-icons.fa-stack
+                i.fab.fa-discord.fa-stack-4x.mb-2
+          .col-lg-3.col-md-4.font-icons
+            a(href='#')
+              span.home-icons.fa-stack
+                i.fab.fa-linkedin-in.fa-stack-4x.mb-2
+          .col-lg-3.col-md-4.font-icons
+            a(href='#')
+              span.home-icons.fa-stack
+                i.fab.fa-youtube.fa-stack-4x.mb-2
+      .col-lg-4.col-md-12.mb-5
+        img.img-fluid.rounded-circle.mb-2(src='img/ravi.jpg' alt='')
+        h4 Ravi Gohel
+        p Co-Founder, Frontend Developer
+        .container.bg-info.p-3.mt-3.d-flex.justify-content-center.rounded
+          .col-lg-3.col-md-4.font-icons
+            a(href='#')
+              span.home-icons.fa-stack
+                i.fab.fa-discord.fa-stack-4x.mb-2
+          .col-lg-3.col-md-4.font-icons
+            a(href='#')
+              span.home-icons.fa-stack
+                i.fab.fa-linkedin-in.fa-stack-4x.mb-2
+          .col-lg-3.col-md-4.font-icons
+            a(href='#')
+              span.home-icons.fa-stack
+                i.fab.fa-youtube.fa-stack-4x.mb-2
+      .col-lg-4.col-md-12.mb-5
+        img.img-fluid.rounded-circle.mb-2(src='img/rahul.jpeg' alt='')
+        h4 Rahul Bairwa
+        p Co-Founder, Operations Executive
+        .container.bg-info.p-3.mt-3.d-flex.justify-content-center.rounded
+          .col-lg-3.col-md-4.font-icons
+            a(href='#')
+              span.home-icons.fa-stack
+                i.fab.fa-discord.fa-stack-4x.mb-2
+          .col-lg-3.col-md-4.font-icons
+            a(href='#')
+              span.home-icons.fa-stack
+                i.fab.fa-linkedin-in.fa-stack-4x.mb-2
+          .col-lg-3.col-md-4.font-icons
+            a(href='#')
+              span.home-icons.fa-stack
+                i.fab.fa-youtube.fa-stack-4x.mb-2
+// TESTIMONIALS
+section#testimonial-section.p-4.bg-dark.text-white
+  .container
+    h2.text-center Testimonials
+    .row
+      .col
+        .test-slider.text-center
+          div
+            blockquote.blockquote
+              p.mb-0 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, sunt!
+              footer.blockquote-footer
+                | John Doe From 
+                cite(title='Company 1') Company 1
+          div
+            blockquote.blockquote
+              p.mb-0 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, sunt!
+              footer.blockquote-footer
+                | Steve Smith From 
+                cite(title='Company 2') Company 2
+          div
+            blockquote.blockquote
+              p.mb-0 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, sunt!
+              footer.blockquote-footer
+                | Megan Williams From 
+                cite(title='Company 3') Company 3
+include footer.pug
+include scripts.pug

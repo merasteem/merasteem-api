@@ -1,0 +1,126 @@
+doctype html
+head
+  include head.pug
+include menu.pug
+.clearfix
+section#how-it-works.dark-overlay.text-light
+  .container
+    h1.text-center.mb-5 HOW IT WORKS?
+    ul.nav.nav-tabs.flex-column.flex-sm-row.nav-justified.mb-5
+      li.nav-item
+        a.flex-sm-fill.text-sm-center.nav-link.active(data-toggle='tab' href='#jobs') Job Seekers
+      li.nav-item
+        a.flex-sm-fill.text-sm-center.nav-link(data-toggle='tab' href='#project') Project Owners
+      li.nav-item
+        a.flex-sm-fill.text-sm-center.nav-link(data-toggle='tab' href='#invest') Investment Opportutnities
+    .tab-content
+      #jobs.tab-pane.fade.show.active.container
+        .row
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-search-dollar.fa-stack-4x.mb-2
+            p.header Search For Jobs
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-user-tie.fa-stack-4x.mb-2
+            p.header Apply For Jobs
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-money-check-alt.fa-stack-4x.mb-2
+            p.header Get Paid For The Work
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+      #project.tab-pane.fade.container
+        .row
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-bullhorn.fa-stack-4x.mb-2
+            p.header Introduce Your Business
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-user-plus.fa-stack-4x.mb-2
+            p.header People Apply For Jobs
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-chart-line.fa-stack-4x.mb-2
+            p.header Attract Investors With Returns
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+      #invest.tab-pane.fade.container
+        .row
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-tasks.fa-stack-4x.mb-2
+            p.header Mark Projects You Like
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-envelope.fa-stack-4x.mb-2
+            p.header Get Notifications
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+          .how-icons.col-md-4.text-center.mb-3
+            span.home-icons.fa-stack
+              i.fa.fa-file-invoice-dollar.fa-stack-4x.mb-2
+            p.header Invest &amp; Earn More
+            p.footer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.
+section#video-tutorials.p-3
+  h1.text-center.text-dark.text-uppercase.py-5 Video Tutorials
+  .row.pb-3
+    .col-6
+      .embed-responsive.embed-responsive-16by9
+        video(controls='')
+          source(src='./video/teach.mp4' type='video/mp4')
+    .col-6
+      .embed-responsive.embed-responsive-16by9
+        video(controls='')
+          source(src='./video/office.mp4' type='video/mp4')
+  .row.pb-3
+    .col-6
+      .embed-responsive.embed-responsive-16by9
+        video(controls='')
+          source(src='./video/office.mp4' type='video/mp4')
+    .col-6
+      .embed-responsive.embed-responsive-16by9
+        video(controls='')
+          source(src='./video/teach.mp4' type='video/mp4')
+  .row.pb-3
+    .col-6
+      .embed-responsive.embed-responsive-16by9
+        video(controls='')
+          source(src='./video/teach.mp4' type='video/mp4')
+    .col-6
+      .embed-responsive.embed-responsive-16by9
+        video(controls='')
+          source(src='./video/office.mp4' type='video/mp4')
+section.mt-3.py-5.dark-overlay
+  .container
+    h1.text-light.text-center.mb-5 Frequently Asked Questions
+    #accordionExample.accordion
+      .card
+        #headingOne.card-header.bg-main
+          h5.mb-0
+            button.btn.btn-link.text-light(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+              | Collapsible Group Item #1
+        #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+          .card-body
+            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+      .card
+        #headingTwo.card-header.bg-main
+          h5.mb-0
+            button.btn.btn-link.text-light.collapsed(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+              | Collapsible Group Item #2
+        #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+          .card-body
+            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+      .card
+        #headingThree.card-header.bg-main
+          h5.mb-0
+            button.btn.btn-link.text-light.collapsed(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+              | Collapsible Group Item #3
+        #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
+          .card-body
+            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+include footer.pug
+include scripts.pug

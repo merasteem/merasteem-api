@@ -1,0 +1,17 @@
+header
+  .overlay
+  video.img-responsive(playsinline='playsinline' autoplay='autoplay' muted='muted' loop='loop')
+    source(src='./video/teach.mp4' type='video/mp4')
+  .container.h-100
+    .d-flex.justify-content-center.text-center.h-100
+      .my-auto.text-white
+        h1.text-uppercase.mb-3.d-none.d-lg-block Find A Professional Service Near You
+        h5.text-uppercase.mb-3 Get instant access to reliable and affordable services
+        .container
+          form.py-3.px-5.text-light.rounded
+            .row
+              .form-group.col-md-5.col-xl-4
+                input#sendAmount.form-control.form-control-lg(type='text' placeholder='Location')
+              .form-group.col-md-7.col-xl-8
+                input#sendAmount.form-control.form-control-lg(type='text' placeholder='Professional Service')
+                p.p-1.text-left E.g. Salon at Home, Plumber, Wedding Photographer
