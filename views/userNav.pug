@@ -1,0 +1,14 @@
+nav.navbar.sticky-top.navbar-expand-xl.navbar-light.bg-light.userNav(data-spy='affix')
+  .container-fluid.navbar-inner.d-flex.justify-content-center
+    ul.navbar-nav
+        a.nav-link.m-1(href='#') Feed
+        a.nav-link.m-1(href='#') News
+        a.nav-link.m-1(href='#') Comments
+        a.nav-link.m-1(href='#') Replies
+        a.nav-link.m-1(href='#') Followers
+        a.nav-link.m-1(href='#') Following
+        li.nav-item(class=(name === "wallet" ? "active" : undefined))
+            a.nav-link.m-1(href='/wallet') Wallet
+        a.nav-link.m-1(href='/invite') Activity
+        a.nav-link.m-1(href='/invite') Invites
+        hr

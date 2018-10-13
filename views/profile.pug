@@ -18,10 +18,11 @@ include userMenu.pug
           span.px-2
             i.fa.fa-shield-alt.mx-1
               | Plankton
+include userNav.pug
 section.container.py-3.mt-5
   .row
-    .sticky-top.col-lg-2.d-none.d-lg-block
-      include sidemenu.pug
+    .stick-top.col-lg-2.d-none.d-lg-block
+      include sidebar.pug
       include topics.pug
     .main-content.col-md-12.col-lg-6
       .text-right
@@ -154,7 +155,7 @@ section.container.py-3.mt-5
                 i.fa.fa-dollar-sign.px-1
                 | 120
       br
-    .col-lg-4.d-none.d-lg-block.sticky-top
+    .col-lg-4.d-none.d-lg-block.stick-top
       .card.text-center.bg-main.text-light.px-2.pt-4.mb-3
         .card-title.mb-0
           h2 Interesting Projects

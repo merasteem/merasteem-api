@@ -8,6 +8,8 @@ nav.navbar.fixed-top.navbar-expand-xl.navbar-light.bg-light(data-spy='affix')
         input.form-control.mr-sm-2(type='search' placeholder='Search Projects' aria-label='Search')
         button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
       ul.navbar-nav.ml-auto.mr-2
+        li.nav-item(class=(name === "exchange" ? "active" : undefined))
+          a.nav-link(href='/exchange') Exchange
         li.nav-item(class=(name === "howitworks" ? "active" : undefined))
           a.nav-link(href='/howitworks') How it works
       span.text-secondary.mx-3

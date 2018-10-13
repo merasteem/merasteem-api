@@ -23,8 +23,12 @@ body {
   object-fit: cover;
 }
 
-.sticky-top {
-  top: 10%;
+.userNav {
+  top: 9%;
+}
+
+.stick-top {
+  top: 15%;
 }
 
 header {
