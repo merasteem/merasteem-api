@@ -1,6 +1,6 @@
 nav.navbar.fixed-top.navbar-expand-xl.navbar-light.bg-light(data-spy='affix')
   .container-fluid.navbar-inner
-    a.navbar-brand.mb-0.h1 Mera Steem
+    a.navbar-brand.mb-0.h1(href='/') Mera Steem
     button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
       span.navbar-toggler-icon
     #navbarSupportedContent.collapse.navbar-collapse
@@ -8,13 +8,10 @@ nav.navbar.fixed-top.navbar-expand-xl.navbar-light.bg-light(data-spy='affix')
         input.form-control.mr-sm-2(type='search' placeholder='Search Projects' aria-label='Search')
         button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
       ul.navbar-nav.ml-auto.mr-3
-        li.nav-item(class=(name === "home" ? "active" : undefined))
-          a.nav-link(href='/') Home
         li.nav-item(class=(name === "exchange" ? "active" : undefined))
           a.nav-link(href='/exchange') Exchange
         li.nav-item(class=(name === "howitworks" ? "active" : undefined))
           a.nav-link(href='/howitworks') How it works
         li.nav-item
           a.nav-link(href='#' data-toggle='modal' data-target='#becomePartner') Become A Professional
-      a.btn.btn-outline-info.my-2.my-sm-0.ml-2(href='https://signup.steemit.com/') Register
       a.btn.btn-outline-info.my-2.my-sm-0.ml-2(href='/profile') Login
