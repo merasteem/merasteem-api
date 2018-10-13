@@ -1,10 +1,20 @@
 # MeraSteem
-MeraSteem is a project that helps businesses by providing resources to get them off of the ground. In other words, MeraSteem acts as a launchpad for new ideas.
+### MeraSteem is a project that helps businesses by providing resources to get them off of the ground. In other words, MeraSteem acts as a launchpad for new ideas.
 
-![MeraSteem Logo](https://cdn.steemitimages.com/DQmdQqVnanx7yZFc5WqKSkDujjb2ZGgPjMnMpTs2f9Fbm3e/merasteem_logo.jpg)
+![MeraSteem Logo](https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmZukwzFfLTasJwWc2w5NsLZYkkbGWW7SyTYa3XZQ29MAX/merasteem_logo_post_main.jpg)
 
-To run this project locally, clone this repo to your local machine. And, make sure Node.js is installed on your machine.
+## Quick Setup
 
-After the repo is cloned, run {npm install} to install all the dependencies on your machine.
+```bash
+git clone https://github.com/ravigohel/merasteem.git
+cd merasteem
 
-Now, run {nodemon index.js} or {npm run start} to run this project.
+npm install
+nodemon index.js
+```
+## Getting involved
+
+We at Merateem really appreciate help from the community. We want to make the Merasteem project as friendly as possible to contributors. It doesn't matter if you are a beginner looking for a place to improve your skills or just want to help us build something great.
+If you would like to contribute, but don't know what to work on, check our [Contributing guide][contributing].
+
+[contributing]: ./docs/CONTRIBUTING.md
