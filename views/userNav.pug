@@ -1,14 +1,22 @@
 nav.navbar.sticky-top.navbar-expand-xl.navbar-light.bg-light.userNav(data-spy='affix')
   .container-fluid.navbar-inner.d-flex.justify-content-center
     ul.navbar-nav
-        a.nav-link.m-1(href='#') Feed
-        a.nav-link.m-1(href='#') News
-        a.nav-link.m-1(href='#') Comments
-        a.nav-link.m-1(href='#') Replies
-        a.nav-link.m-1(href='#') Followers
-        a.nav-link.m-1(href='#') Following
+        li.nav-item(class=(name === "feed" ? "active" : undefined))
+            a.nav-link.m-1(href='/feed') Feed
+        li.nav-item(class=(name === "news" ? "active" : undefined))
+            a.nav-link.m-1(href='/news') News
+        li.nav-item(class=(name === "comments" ? "active" : undefined))
+            a.nav-link.m-1(href='/comments') Comments
+        li.nav-item(class=(name === "replies" ? "active" : undefined))
+            a.nav-link.m-1(href='/replies') Replies
+        li.nav-item(class=(name === "followers" ? "active" : undefined))
+            a.nav-link.m-1(href='/followers') Followers
+        li.nav-item(class=(name === "following" ? "active" : undefined))
+            a.nav-link.m-1(href='/following') Following
         li.nav-item(class=(name === "wallet" ? "active" : undefined))
             a.nav-link.m-1(href='/wallet') Wallet
-        a.nav-link.m-1(href='/invite') Activity
-        a.nav-link.m-1(href='/invite') Invites
+        li.nav-item(class=(name === "activity" ? "active" : undefined))
+            a.nav-link.m-1(href='/activity') Activity
+        li.nav-item(class=(name === "invite" ? "active" : undefined))
+            a.nav-link.m-1(href='/invite') Invites
         hr
